@@ -1,0 +1,9 @@
+import random
+import string
+
+değişken = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+a = int(input("şifreyi giriniz"))
+parola = ""
+for _ in range(a):
+    parola += random.choice(değişken)
+print (parola)
